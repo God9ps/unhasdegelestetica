@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="dc384737-3eef-4749-bbdc-6cb6258e94b0" name="unhasdegelestetica" url="http://unhasdegelestetica.pt">
-        <fileTransfer host="lhcp1099.webapps.net" port="21">
+        <fileTransfer host="ftp.unhasdegelestetica.pt" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

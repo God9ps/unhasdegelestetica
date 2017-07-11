@@ -42,7 +42,8 @@ class Alerta
         }*/
 //        $mail->AddAddress('ciclano@site.net');
         $mail->AddBCC('pauloamserrano@gmail.com', 'Paulo Serrano'); // Copia
-        //$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
+        $mail->AddBCC('kellycristinaxx@gmail.com', 'Kelly Silva'); // Cópia Oculta
+        $mail->AddBCC('ana.s.m.garcia.83@gmail.com', 'Kelly Silva'); // Cópia Oculta
         // Define os dados técnicos da Mensagem
         // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         $mail->IsHTML(true); // Define que o e-mail será enviado como HTML

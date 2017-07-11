@@ -5,8 +5,11 @@
       <paths name="unhasdegelestetica">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

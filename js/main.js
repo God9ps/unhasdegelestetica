@@ -67,7 +67,7 @@ $(document).ready(function () {
             type: "POST",
 
 			/*"../trata.php"*/
-            url: "plugins/mail.php",
+            url: "trata.php",
             dataType: "json",
             cache: "false",
             error: function (jqXHR, exception) {

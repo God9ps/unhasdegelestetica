@@ -11,9 +11,10 @@ $mail->isHTML();
 //Set who the message is to be sent from
 $mail->setFrom($_POST['email'], $_POST['nome']);
 //Set an alternative reply-to address
-$mail->addReplyTo('ana.s.m.garcia.83@gmail.com', 'Ana Garcia');
+$mail->addAddress('ana.s.m.garcia.83@gmail.com', 'Ana Garcia');
+$mail->addAddress('kellycristinaxx@gmail.com', 'Kelly Silva');
 //Set who the message is to be sent to
-$mail->addAddress('pauloamserrano@gmail.com', 'Paulo Serrano');
+$mail->addReplyTo('pauloamserrano@gmail.com', 'Paulo Serrano');
 //Set the subject line
 $mail->Subject = 'Pedido de contacto através do website';
 //Read an HTML message body from an external file, convert referenced images to embedded,

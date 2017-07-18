@@ -1,0 +1,12 @@
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+
+    RewriteRule ^quem-somos$ index.php?pagina=sobre [QSA,L,NC]
+    RewriteRule ^unhas-de-gel$ index.php?pagina=unhas-de-gel [QSA,L,NC]
+    RewriteRule ^microblading$ index.php?pagina=microblading [QSA,L,NC]
+    RewriteRule ^extensao-de-pestanas$ index.php?pagina=extensao-de-pestanas [QSA,L,NC]
+
+

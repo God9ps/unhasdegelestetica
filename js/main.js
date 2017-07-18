@@ -29,17 +29,7 @@
 	$(".bx-prev").addClass('fa fa-angle-left');
 
 
-	$('a.toggle-menu').click(function(){
-        $('.responsive .main-menu').toggle();
-        return false;
-    });
-
-    $('.responsive .main-menu a').click(function(){
-        $('.responsive .main-menu').hide();
-
-    });
-
-    $('.main-menu').singlePageNav();
+    /*$('.main-menu').singlePageNav();*/
 	
 //	var dt = window.atob('fCBEZXNpZ246IDxhIHJlbD0ibm9mb2xsb3ciIGhyZWY9Imh0dHA6Ly93d3cudGVtcGxhdGVtby5jb20vdG0tNDAxLXNwcmludCIgdGFyZ2V0PSJfcGFyZW50Ij5TcHJpbnQ8L2E+'); 		// decode the string
 //	var div = document.getElementById('copyright');
@@ -65,8 +55,6 @@ $(document).ready(function () {
     $(function () {
         $.ajaxSetup({
             type: "POST",
-
-			/*"../trata.php"*/
             url: "trata.php",
             dataType: "json",
             cache: "false",
@@ -109,6 +97,31 @@ $(document).ready(function () {
             }
         });
         return false;
+    });
+
+
+    // $('#gallery').gallerie();
+
+
+    $('#myCarousel').carousel({
+        interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function (e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-'+id).html());
     });
 
 });

@@ -9,11 +9,44 @@
 
     <url>
         <loc>http://unhasdegelestetica.pt/</loc>
-        <changefreq>monthly</changefreq>
+
         <xhtml:link
                 rel="alternate"
                 hreflang="pt-pt"
                 href="http://unhasdegelestetica.pt/"
+        />
+
+    </url>
+
+    <url>
+        <loc>http://unhasdegelestetica.pt/</loc>
+        <changefreq>monthly</changefreq>
+        <xhtml:link
+                rel="alternate"
+                hreflang="pt-pt"
+                href="http://unhasdegelestetica.pt/unhas-de-gel"
+        />
+
+    </url>
+
+    <url>
+        <loc>http://unhasdegelestetica.pt/</loc>
+        <changefreq>monthly</changefreq>
+        <xhtml:link
+                rel="alternate"
+                hreflang="pt-pt"
+                href="http://unhasdegelestetica.pt/microblading"
+        />
+
+    </url>
+
+    <url>
+        <loc>http://unhasdegelestetica.pt/</loc>
+        <changefreq>monthly</changefreq>
+        <xhtml:link
+                rel="alternate"
+                hreflang="pt-pt"
+                href="http://unhasdegelestetica.pt/extensao-de-pestanas"
         />
 
     </url>

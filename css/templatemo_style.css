@@ -51,6 +51,12 @@ textarea {
     padding: 0;
     margin: 0;
     list-style: none;
+
+}
+.dropdown {
+    background-color: black;
+    position: relative;
+    z-index: 100;
 }
 
 .item-small, .item-large, .product-item .item-thumb {
@@ -362,6 +368,106 @@ h6 {
     color: white;
     display: block;
 }
+.navbar-header{
+    height: 115px;
+}
+.navbar-default{
+    background: #000;
+
+    margin-bottom: 0px;
+}
+.navbar-brand{
+    background: hotpink;
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown-menu{
+    background-color: lightgrey;
+    color: black;
+    font-weight: 400;
+}
+
+.navbar-brand>img{
+    float: left;
+
+}
+
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.horario{
+  font-weight: bold;
+    font-size: 1.3em;
+}
+
+.business{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.gallery-item{
+    position: absolute;
+    z-index: 988;
+    top: 40px;
+    background-color: transparent;
+    display: inline-block;
+    left: 20px;
+    font-family: "Arial Black", Serif;
+    font-weight: bolder;
+    font-size: 2.3em;
+    color: white;
+}
+
+.logo-text{
+    margin-top: 30px;
+    margin-left: 105px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+    background-color: hotpink!important;
+    height: 100%;
+    color: white;
+}
+
+.menu{
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+    margin-top: 55px;
+}
+
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color:hotpink;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: hotpink;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
 
 .main-menu {
     text-align: right;
@@ -427,7 +533,7 @@ h6 {
     Slider Styling
    ========================================================================== */
 .site-slider {
-    padding-top: 102px;
+    padding-top: 115px;
 }
 
 .site-slider ul li {
@@ -464,10 +570,19 @@ h6 {
     right: 0;
 }
 
-.slider-caption h2 {
+.slider-caption h2 h3 h4 h5 h6 {
     font-size: 30px;
     margin: 20px;
     font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.sliderTitle{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px;
     text-transform: uppercase;
     display: inline-block;
     color: whitesmoke;
@@ -666,7 +781,12 @@ h6 {
     text-align: center;
 }
 
-.product-item .item-thumb .overlay .overlay-inner a.view-detail {
+#gallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-item .item-thumb .overlay .overlay-inner span.view-detail {
     position: relative;
     margin-top: 45%;
     display: block;
@@ -677,6 +797,7 @@ h6 {
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .product-item .item-thumb:hover .overlay {
@@ -785,6 +906,23 @@ ul.social li a {
 	RESPONSIVE STYLES 
 --------------------------------------------------------*/
 @media (max-width: 991px) {
+
+    .site-slider{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .site-slider {
+        padding-top: 115px;
+    }
+    .navbar-brand{
+        background: hotpink;
+        height: 100%;
+        width: auto;
+    }
+
+    navbar-header{
+        width: auto;
+    }
     .main-menu, .bx-thumbnail-wrapper {
         display: none;
     }
@@ -844,7 +982,18 @@ ul.social li a {
     .section-title {
         font-size: 24px;
     }
+    .site-slider {
+        padding-top: 115px;
+    }
+    .navbar-brand{
+        background: hotpink;
+        height: 100%;
+        width: auto;
+    }
 
+    navbar-header{
+        width: auto;
+    }
     .contact-form {
         margin-top: 60px;
     }
